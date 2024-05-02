@@ -21,3 +21,12 @@ function cliqueiNoBotao() {
 
     buscarCidade(cidade)
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const cidadeInput = document.querySelector(".input-cidade");
+    cidadeInput.addEventListener('keypress', function(event){
+        if (event.keyCode === 13){
+            cliqueiNoBotao();
+        }
+    } )
+})
